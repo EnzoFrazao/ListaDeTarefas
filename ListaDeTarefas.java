@@ -1,19 +1,4 @@
-package semana4.desafios;
-
-//Adicionar Novas Tarefas:** O usuário poderá adicionar novas tarefas à lista.
-// Cada tarefa pode ser uma simples string (como "Estudar para o exame de Java") e será armazenada em uma lista.
-
-//Marcar Tarefas como Concluídas:** O usuário poderá marcar uma tarefa como concluída.
-// Isso pode ser feito alterando o status da tarefa ou removendo-a da lista de tarefas pendentes.
-
-//Listar Todas as Tarefas:** O usuário poderá visualizar todas as tarefas atuais,
-// tanto as concluídas quanto as pendentes. Isso ajuda o usuário a ter uma visão geral das tarefas.
-
-//Loop de Execução:** O programa deve continuar em execução, permitindo que o usuário adicione,
-// marque como concluídas, ou liste as tarefas até que ele escolha sair.
-
-//Isso significa que o programa deve ser baseado em um loop que só é interrompido quando o usuário decide encerrar
-//a aplicação.
+package projetos;
 
 import java.beans.PropertyEditorManager;
 import java.util.ArrayList;

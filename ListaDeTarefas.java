@@ -22,49 +22,46 @@ public class ListaDeTarefas {
             opcao = entrada.nextInt();
             entrada.nextLine();
 
-            switch (opcao){
+            switch (opcao) {
                 case 1:
                     System.out.println("Digite a tarefa que deseja adicionar a lista: ");
                     String novatarefa = entrada.nextLine();
                     listaTarefas.add(novatarefa);
                     break;
                 case 2:
-                    if (listaTarefas.isEmpty()){
+                    if (listaTarefas.isEmpty()) {
                         System.out.println("A lista está vazia.\n");
                         break;
                     }
                     System.out.println("Lista de tarefas: ");
-                    for (int i = 0; i<listaTarefas.size(); i++){
-                        System.out.println((i+1)+":"+listaTarefas.get(i));
+                    for (int i = 0; i < listaTarefas.size(); i++) {
+                        System.out.println((i + 1) + ":" + listaTarefas.get(i));
                     }
                     System.out.println("Digite o número da tarefa que foi concluida: \n");
                     int indice = entrada.nextInt() - 1;
                     entrada.nextLine();
-                    if (indice >= 0 && indice <listaTarefas.size()){
+                    if (indice >= 0 && indice < listaTarefas.size()) {
                         String tarefaConcluida = listaTarefas.remove(indice);
                         listaTarefasConcluidas.add(tarefaConcluida);
                         System.out.println("Tarefa marcada como concluida.\n");
-                    }
-                    else
+                    } else
                         System.out.println("Número da tarefa inválido.\n");
                     break;
                 case 3:
                     System.out.println("Tarefas pendentes: \n");
-                    if (listaTarefas.isEmpty()){
+                    if (listaTarefas.isEmpty()) {
                         System.out.println("Nenhuma tarefa pendente.\n");
-                    }
-                    else{
-                        for (int i = 0; i<listaTarefas.size(); i++){
-                            System.out.println((i+1)+":"+listaTarefas.get(i));
+                    } else {
+                        for (int i = 0; i < listaTarefas.size(); i++) {
+                            System.out.println((i + 1) + ":" + listaTarefas.get(i));
                         }
                     }
                     System.out.println("Tarefas concluidas: ");
-                    if (listaTarefasConcluidas.isEmpty()){
+                    if (listaTarefasConcluidas.isEmpty()) {
                         System.out.println("Não há tarefas concluídas.");
-                    }
-                    else{
-                        for (int i = 0; i<listaTarefasConcluidas.size(); i++){
-                            System.out.println((i+1)+":"+listaTarefasConcluidas.get(i));
+                    } else {
+                        for (int i = 0; i < listaTarefasConcluidas.size(); i++) {
+                            System.out.println((i + 1) + ":" + listaTarefasConcluidas.get(i));
                         }
                     }
                     break;
@@ -74,7 +71,7 @@ public class ListaDeTarefas {
                 default:
                     System.out.println("Número inválido, escolha uma opção válida\n");
             }
-        }while (opcao != 4);
+        } while (opcao != 4);
 
         entrada.close();
     }

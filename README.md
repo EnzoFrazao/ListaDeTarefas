@@ -12,7 +12,7 @@ O código é um gerenciador de tarefas que permite adicionar novas tarefas, marc
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/enzofrazaovencio/"><img src="https://github.com/user-attachments/assets/fad2d485-c100-4ab8-a397-5ae4d180585a" width="100px;"/><br /><sub><b>Enzo Frazão Vencio</b></sub></a><br />
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/enzofrazaovencio/"><img src="" width="100px;"/><br /><sub><b>Enzo Frazão Vencio</b></sub></a><br />
     </tr>
   </tbody>
 </table>
